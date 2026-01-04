@@ -1,0 +1,25 @@
+<a
+  href="https://wa.me/34614293047?text=Hi!%20I'm%20interested%20in%20getting%20my%20own%20TennisHub%20player%20page."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp"
+  class="whatsapp-button fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-lg transition-all duration-300 flex items-center justify-center group"
+  x-data="{ hover: false }"
+  @mouseenter="hover = true"
+  @mouseleave="hover = false">
+
+  <div class="relative">
+    <!-- WhatsApp Icon -->
+    <div class="w-8 h-8 text-white transition-transform duration-300" :class="{ 'scale-110': hover }">
+      {% include svg/whatsapp__btn.svg %}
+    </div>
+
+    <!-- Pulse Effect -->
+    <div class="absolute inset-0 rounded-full bg-[#25D366] opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10 animate-ping"></div>
+
+    <!-- Optional Notification Badge -->
+    <div class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full border-2 border-white flex items-center justify-center text-white text-xs font-bold">
+      1
+    </div>
+  </div>
+</a>
