@@ -16,4 +16,5 @@ vendor/
 Gemfile.lock
 
 # NOTE: _site/ is NOT ignored - GitHub Pages needs it!
-# assets/css/main.css is NOT ignored - GitHub Pages needs it!
+# assets/css/main.css is NOT ignored - GitHub Pages needs it!_site/
+_site/
