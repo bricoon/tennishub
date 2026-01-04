@@ -1,0 +1,27 @@
+# _config.yml
+title: "TennisHub"
+description: "Professional tennis player profiles"
+url: "https://tennishub.site"  # Your GitHub username
+baseurl: ""
+# Build settings
+markdown: kramdown
+github: [metadata]
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections_dir: .
+
+# Minification (optional)
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+
+# Tailwind config
+tailwind:
+  config: tailwind.config.js

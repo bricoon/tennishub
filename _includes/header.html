@@ -1,0 +1,49 @@
+<header class="bg-white text-gray-900 px-4 py-3">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <!-- Logo - Just text -->
+    <div class="flex items-center">
+      <a href="{{ '/' | relative_url }}" class="group">
+        <!-- Mobile -->
+        <span class="md:hidden text-black font-bold text-lg group-hover:text-gray-700 transition-colors cursor-pointer">
+          TennisHub
+        </span>
+
+        <!-- Desktop -->
+        <span class="hidden md:inline text-black text-xl font-bold tracking-tight group-hover:text-gray-700 transition-colors cursor-pointer">
+          TennisHub
+        </span>
+      </a>
+    </div>
+    <!-- Desktop Menu Items -->
+    <div class="hidden md:flex items-center space-x-10">
+      {% comment %}
+        <a href="{{ '/' | relative_url }}" class="font-medium hover:text-gray-700 px-2">Welcome</a>
+      {% endcomment %}
+      <a href="{{ '/about' | relative_url }}" class="font-medium hover:text-gray-700 px-2">About</a>
+    </div>
+    <!-- Social Media Icons - Centered on mobile -->
+    <div class="flex items-center space-x-4 pr-24 md:pr-4">
+      <!-- Instagram -->
+      <a
+        href="{{ site.social.instagram | default: 'https://www.instagram.com/joaquinbianchi1/' }}"
+        target="_blank"
+        class="w-9 h-9 flex items-center justify-center hover:opacity-80 p-1">
+        {{ site.data.svg.instagram }}
+      </a>
+      <!-- TikTok -->
+      {% comment %} <a
+        href="{{ site.social.tiktok | default: 'https://www.tiktok.com/@joaquinbianch1?_r=1&_t=ZM-92aMBo70UWG' }}"
+        target="_blank"
+        class="w-9 h-9 flex items-center justify-center hover:opacity-80 p-1">
+        {{ site.data.svg.tiktok }}
+      </a> {% endcomment %}
+      <!-- YouTube -->
+      {% comment %} <a
+        href="{{ site.social.youtube | default: 'https://www.youtube.com/@RoadTo800ATP' }}"
+        target="_blank"
+        class="w-9 h-9 flex items-center justify-center hover:opacity-80 p-1">
+        {{ site.data.svg.youtube }}
+      </a> {% endcomment %}
+    </div>
+  </div>
+</header>
