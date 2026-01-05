@@ -17,3 +17,6 @@ Gemfile.lock
 
 # NOTE: _site/ is NOT ignored - GitHub Pages needs it!
 # assets/css/main.css is NOT ignored - GitHub Pages needs it!cleanup.sh
+_site/
+.jekyll-cache/
+assets/css/main.css
