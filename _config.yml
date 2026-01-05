@@ -25,3 +25,7 @@ compress_html:
 # Tailwind config
 tailwind:
   config: tailwind.config.js
+
+exclude:
+  - cleanup.sh
+  - .jekyll-cache/  
